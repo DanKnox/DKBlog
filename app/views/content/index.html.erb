@@ -1,0 +1,6 @@
+<div class="edit"><%= link_to 'Edit Post', edit_post_path(@content.id) %></div>
+<h1><%= @content.title %></h1>
+<h2><%= @content.date.to_date.readable_inspect %></h2>
+<div class="content">
+<%= @content.body.html_safe %>
+</div>

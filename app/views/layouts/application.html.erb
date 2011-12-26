@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Danknox</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="main-body">
+	<div class="container">
+		<div class="container-two">
+			<div class="threedot"></div>
+			<div class="cloud"></div>
+			<div class="danknox"></div>
+			<div class="navbar">
+				<div class="navbar-left"></div>
+				<div class="navbar-middle">
+					<ul class="navbar-ul">
+						<li><%= image_tag "home.png" %></li>
+						<li class="about"><%= image_tag "about.png" %></li>
+						<li><%= image_tag "contact.png"%></li>
+					</ul>
+				</div>
+				<div class="navbar-right"></div>
+			</div>
+			<div class="recent">
+				<%= render :partial => 'widgets/recent_posts' %>
+				<input type="text" class="search" placeholder='Search'>
+			</div>
+			<div class="main">
+				<div class="content-container">
+					<%= render :partial => 'layouts/notices' %>
+					<%= yield %>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			Copyright Dan Knox, 2012
+			<div class="float-right"><%= link_to "New Post", new_post_path %></div>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<div class="content">
+	<% if alert%>
+		<div class="errors"><%= alert %></div>
+	<% end %>
+	<%= form_for @content, :method => :post do |f| %>
+	<h1>New Post</h1>
+	<%= f.text_field :title %>
+	<h1>Body</h1>
+	<%= f.text_area :body %>
+	<%= f.submit "Submit" %>
+	<% end %>
+</div>

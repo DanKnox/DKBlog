@@ -1,0 +1,278 @@
+.main-body {
+	background-color: #37517c;
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.container {
+	width: 879px;
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	color:white;
+	font: {
+		family:"Helvetica Neue";
+		size:13pt;
+		color:white;
+	}
+	h1 {
+		font-size:30pt;
+		color:white;
+		margin:0;
+		margin-top:10px;
+		padding:0;
+	}
+	h2 {
+		font-size:14pt;
+		color:#e6d22c;
+		padding:0;
+		margin:0;
+		margin-bottom:10px;
+	}
+	position:relative;
+	
+	.container-two {
+		width:615px;
+		margin: {
+			right:auto;
+		}
+	}
+}
+.threedot {
+	background-image: url('/assets/threedotproduction.png');
+	margin: {
+		top:-10px;
+		right:17px;
+	}
+	height:56px;
+	width:150px;
+	float:right;
+}
+.cloud {
+	background-image: url('/assets/cloud.png');
+	height:101px;
+	width:181px;
+	margin: {
+		top:30px;
+		left:auto;
+		right:auto;
+	}
+}
+.danknox {
+	background-image: url('/assets/danknox.png');
+	width:577px;
+	height:62px;
+	margin: {
+		top:23px;
+		left:auto;
+		right:auto;
+	}
+	position:relative;
+}
+.navbar {
+	width:610px;
+	height:89px;
+	margin: {
+		top:22px;
+		left:auto;
+		right:auto;
+	}
+	position:relative;
+	
+	.navbar-left {
+		float:left;
+		background-image: url('/assets/navbar-left.png');
+		width:14px;
+		height:89px;
+		position:relative;
+	}
+	
+	.navbar-middle {
+		background-image: url('/assets/navbar-middle.png');
+		background-repeat:repeat-x;
+		height:89px;
+		width:582px;
+		float:left;
+	}
+	
+	.navbar-right {
+		background-image: url('/assets/navbar-right.png');
+		float:right;
+		width:14px;
+		height:89px;
+	}
+	ul {
+		list-style:none;
+		padding:0;
+		margin:0;
+		
+		li {
+			float:left;
+		}
+	}
+}
+.recent {
+	width:244px;
+	height:292px;
+	padding:0;
+	margin: {
+		right:-23px;
+		top:21px;
+		bottom:0px;
+	}
+	float:right;
+	right:0px;
+	position:absolute;
+	.recent-title {
+		background-image:url('/assets/recent.png');
+		width:244px;
+		height:43px;
+		padding:0;
+		margin:0;
+		margin: {
+			top:14px;
+		}
+		margin-top:14px;
+	}
+	.recent-ul {
+		list-style-image:url('/assets/li.png');
+		margin-top:15px;
+		margin-left:-15px;
+		li {
+			margin-bottom:15px;
+		}
+	}
+	.search {
+		background-image:url('/assets/search.png');
+		height:43px;
+		width:243px;
+		position: absolute;
+		left: 0px;
+		float: left;
+		border:0;
+	}
+}
+.content-container {
+	width:98%;
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	padding-left:14px;
+	
+	.flash-message {
+		color: #404040;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+		background-image: none;
+		background-color: #FDF5D9;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+		padding: 14px;
+		width:90%;
+		margin: {
+			top:15px;
+			bottom:10px;
+			left:auto;
+			right:auto;
+		}
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		
+		border: {
+			color:#FCEEC1;
+			style:solid;
+			width:3px;
+			radius:3px;
+		}
+	}
+	.alert {
+		background-color:#FDDFDE;
+		border-color:#FBC7C6;
+	}
+	
+	.notice {
+		background-color:#D1EED1;
+		border-color:#BFE7BF;
+	}
+}
+.main {
+	width:615px;
+	background-color:#6c717b;
+	position:relative;
+	margin-top:21px;
+	padding:0;
+	padding-bottom:30px;
+	border: {
+		width:3px;
+		color:white;
+		style:solid;
+		radius:4px;
+	}
+	
+	.edit {
+		float: right;
+		padding-right: 20px;
+		
+		a {
+			color:white;
+		}
+	}
+	
+	.content {
+		padding-right:10px;
+		
+		input, textarea {
+			height: 35px;
+			width: 488px;
+			border-radius: 20px;
+			border-style: solid;
+			border-width: 4px;
+			margin-top: 10px;
+			padding-left: 20px;
+			font-size: 18px;
+		}
+		
+		textarea {
+			height:300px;
+		}
+		
+		pre {
+			background-color:#989ca1;
+			width:95%;
+			padding:10px;
+			border-radius:5px;
+		}
+		code {
+			margin-right:auto;
+			margin: {
+				right:auto;
+				top:30px;
+				bottom:30px;
+			}
+			padding-left:10px;
+			color:white;
+			font-weight:bold;
+			line-height:22px;
+			font-size:18px;
+		}
+	
+	}
+}
+.footer {
+	width:621px;
+	padding-left:14px;
+	margin-top:20px;
+	font: {
+		family:"Helvetica Neue";
+		font-size:18pt;
+		weight:bold;
+		color:white;
+	}
+	a {
+		color:white;
+	}
+}
+.float-right {
+	float:right;
+}
