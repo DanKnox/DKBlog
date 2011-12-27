@@ -1,20 +1,3 @@
-GIT
-  remote: git://github.com/intridea/omniauth.git
-  revision: 7c9c8da1c4240c4b4ebb40f35de807ed8a341a23
-  specs:
-    omniauth (1.0.1)
-      hashie (~> 1.2)
-      rack (~> 1.0)
-
-GIT
-  remote: https://github.com/plataformatec/devise.git
-  revision: f712d07b23d25ecbb21c858981dc73343bb3e19c
-  specs:
-    devise (2.0.0.rc)
-      bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.0.3)
-      warden (~> 1.1)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -61,6 +44,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.2.0)
+    devise (1.5.3)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.0.3)
+      warden (~> 1.1)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.2.13)
@@ -88,6 +75,9 @@ GEM
     oauth2 (0.5.1)
       faraday (~> 0.7.4)
       multi_json (~> 1.0.3)
+    omniauth (1.0.1)
+      hashie (~> 1.2)
+      rack
     omniauth-github (1.0.1)
       omniauth (~> 1.0)
       omniauth-oauth2 (~> 1.0)
@@ -170,11 +160,11 @@ DEPENDENCIES
   acts_as_commentable
   albino
   coffee-rails (~> 3.1.1)
-  devise!
+  devise
   jquery-rails
   mysql2
   nokogiri
-  omniauth!
+  omniauth
   omniauth-github
   rails (= 3.1.3)
   redcarpet

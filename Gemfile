@@ -10,8 +10,8 @@ gem 'mysql2'
 gem 'redcarpet'
 gem 'albino'
 gem 'nokogiri'
-gem 'devise', :git => "https://github.com/plataformatec/devise.git"
-gem 'omniauth', :git => "git://github.com/intridea/omniauth.git"
+gem 'devise' #, :git => "https://github.com/plataformatec/devise.git"
+gem 'omniauth' #, :git => "git://github.com/intridea/omniauth.git"
 gem 'omniauth-github'
 gem 'acts_as_commentable'
 
