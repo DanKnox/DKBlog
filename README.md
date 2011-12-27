@@ -1,3 +1,3 @@
-== Dan Knox Blog
+## Dan Knox Blog
 fairly self explanatory
-== Three Dot Loft LLC
+## Three Dot Loft LLC
