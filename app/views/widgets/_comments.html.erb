@@ -1,0 +1,32 @@
+<div class="comment-stats"><%= pluralize(@post.comments.count,'Comment') %></div>
+
+<% @post.comments.each do |comment| %>
+<div class="comments">
+	<div class="old">
+		<font style="color:white;"><%= comment.user.present? ? comment.user.name : 'Guest' %></font> | <font style="color:#E6D22C;"><%= comment.created_at.to_date.readable_inspect %></font><br>
+		<br>
+		<%= comment.comment %>
+	</div>
+</div>
+<% end %>
+<div class="comments">
+	<div class="new">
+		<%= form_for Comment.new, :url => comments_path(:post_id => @post.id) do |f| %>
+		<%= link_to 'Sign in with Github', user_omniauth_authorize_path(:github) unless signed_in? %>
+		<table>
+			<tr>
+				<% if signed_in? %>
+				<td colspan="2">Commenting as <%= current_user.name %></td>
+				<% else %>
+				<td colspan="2">Commenting as Guest.</td>
+				<% end %>
+			</tr>
+			<tr>
+				<td>Comment:</td>
+				<td><%= f.text_area :comment %></td>
+			</tr>
+		</table>
+		<%= submit_tag 'Comment' %>
+		<% end %>
+	</div>
+</div>

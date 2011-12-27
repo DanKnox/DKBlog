@@ -1,5 +1,5 @@
 class ContentController < ApplicationController
   def index
-    @content = Post.last
+    @post = Post.last
   end  
 end

@@ -1,3 +1,23 @@
+a:hover {
+	color:#E6D22C !important;
+}
+a {
+	text-decoration:none;
+}
+input {
+	:focus {
+		outline-width:0;
+	}
+}
+::-webkit-input-placeholder {
+	color:black;
+}
+:focus {
+	border-style:none;
+}
+input:focus {
+	outline-width:0px;
+}
 .main-body {
 	background-color: #37517c;
 	height:100%;
@@ -7,8 +27,10 @@
 .container {
 	width: 879px;
 	margin: {
+		top:20px;
 		left: auto;
 		right: auto;
+		bottom:30px;
 	}
 	color:white;
 	font: {
@@ -43,7 +65,6 @@
 	background-image: url('/assets/threedotproduction.png');
 	margin: {
 		top:-10px;
-		right:17px;
 	}
 	height:56px;
 	width:150px;
@@ -51,10 +72,9 @@
 }
 .cloud {
 	background-image: url('/assets/cloud.png');
-	height:101px;
-	width:181px;
+	height:116px;
+	width:191px;
 	margin: {
-		top:30px;
 		left:auto;
 		right:auto;
 	}
@@ -79,6 +99,21 @@
 		right:auto;
 	}
 	position:relative;
+	
+	.home {
+		width:160px;
+		height:89px;
+	}
+	
+	.about {
+		width:186px;
+		height:89px;
+	}
+	
+	.contact {
+		width:214px;
+		height:89px;
+	}
 	
 	.navbar-left {
 		float:left;
@@ -108,7 +143,35 @@
 		margin:0;
 		
 		li {
+			background-image:url('/assets/navbar-middle.png');
 			float:left;
+			text-align:center;
+			:hover {
+				background-image:url('/assets/active.png');
+			}
+			a {
+				display: table-cell;
+				margin:0;
+				padding:0;
+				padding-left:10px;
+				height:89px;
+				line-height:0px;
+			}
+			.home {
+				width:160px;
+				height:89px;
+			}
+			.about {
+				width:186px;
+				height:89px;
+			}
+			.contact {
+				width:214px;
+				height:89px;
+			}
+		}
+		.active {
+			background-image:url('/assets/active.png');
 		}
 	}
 }
@@ -117,7 +180,6 @@
 	height:292px;
 	padding:0;
 	margin: {
-		right:-23px;
 		top:21px;
 		bottom:0px;
 	}
@@ -141,16 +203,38 @@
 		margin-left:-15px;
 		li {
 			margin-bottom:15px;
+			
+			a {
+				color:white;
+			}
 		}
 	}
 	.search {
 		background-image:url('/assets/search.png');
+		background-color:transparent;
 		height:43px;
-		width:243px;
+		width:188px;
+		padding-left:55px;
 		position: absolute;
+		font-size:17pt;
+		color:black;
 		left: 0px;
 		float: left;
-		border:0;
+		border:0;		
+	}
+}
+.search-box {
+	display:table-cell;
+	margin-bottom:20px;
+	position:relative;
+}
+.user-account {
+	display: block;
+	position: relative;
+	margin-top: 60px;
+	margin-left: 10px;
+	a {
+		color:#E6D22C;
 	}
 }
 .content-container {
@@ -197,7 +281,7 @@
 	}
 }
 .main {
-	width:615px;
+	width:605px;
 	background-color:#6c717b;
 	position:relative;
 	margin-top:21px;
@@ -212,19 +296,25 @@
 	
 	.edit {
 		float: right;
-		padding-right: 20px;
-		
+		padding-right: 5px;
+		margin-top:-10px;
 		a {
 			color:white;
 		}
 	}
 	
 	.content {
-		padding-right:10px;
+		padding-right:14px;
+		
+		p {
+			margin-top:0px;
+			text-align:justify;
+			text-justify:inter-work;
+		}
 		
 		input, textarea {
 			height: 35px;
-			width: 488px;
+			width: 555px;
 			border-radius: 20px;
 			border-style: solid;
 			border-width: 4px;
@@ -234,11 +324,14 @@
 		}
 		
 		textarea {
-			height:300px;
+			height:500px;
 		}
 		
 		pre {
-			background-color:#989ca1;
+			/* Fallback for web browsers that doesn't support RGBa */
+			background: rgb(152, 156, 161);
+			/* RGBa with 0.6 opacity */
+			background: rgba(152, 156, 161, 0.8);
 			width:95%;
 			padding:10px;
 			border-radius:5px;
@@ -259,6 +352,75 @@
 	
 	}
 }
+.email-me {
+	a {
+		color:#E6D22C;
+	}
+}
+.comment-stats {
+	margin-top:20px;
+}
+.comments {
+	width:595px;
+	background-color:#a7b1bc;
+	position:relative;
+	margin-top:21px;
+	color:black;
+	padding:0;
+	padding-bottom:20px;
+	padding-top:10px;
+	padding-left:14px;
+	border: {
+		width:3px;
+		color:white;
+		style:solid;
+		radius:4px;
+	}
+	
+	table {
+		margin-top:5px;
+		
+		td {
+			display:table;
+		}
+	}
+	
+	a {
+		color:#E6D22C;
+		margin-left:5px;
+	}
+	
+	textarea {
+		height: 120px;
+		width: 556px;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 2px;
+		margin-top: 10px;
+		padding-left: 10px;
+		padding-top:10px;
+		font-size: 18px;
+	}
+	
+	input {
+		height: 35px;
+		width: 150px;
+		border-radius: 10px;
+		border-style: solid;
+		border-width: 2px;
+		margin: {
+			top: 5px;
+			left: 5px;
+		}
+		padding-left: 5px;
+		padding-top:5px;
+		font-size: 18px;
+	}
+	
+	textarea:focus {
+		outline-width:0px; 
+	}
+}
 .footer {
 	width:621px;
 	padding-left:14px;
@@ -275,4 +437,5 @@
 }
 .float-right {
 	float:right;
+	margin-right:40px;
 }

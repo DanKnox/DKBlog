@@ -2,5 +2,6 @@
 <h1><%= @post.title %></h1>
 <h2><%= @post.date.to_date.readable_inspect %></h2>
 <div class="content">
-<%= @post.body.html_safe %>
+<%= markdown(@post.body) %>
 </div>
+<%= render :partial => 'widgets/email_me' %>
