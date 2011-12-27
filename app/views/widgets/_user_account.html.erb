@@ -4,6 +4,8 @@
 	Not you? <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %>
 <% else %>
 	<%= link_to 'Sign in with Github', user_omniauth_authorize_path(:github) %><br><br>
+	<% unless Rails.env.production? %>
 	<%= link_to 'Sign in with Developer', user_omniauth_authorize_path(:developer) %>
+	<% end %>
 <% end %>
 </div>
