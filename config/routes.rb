@@ -7,7 +7,7 @@ Danknox::Application.routes.draw do
   resources :posts
   resources :comments, :only => [:create,:update]
   resources :content
-  root to: 'content#index'
+  root :to => 'content#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
