@@ -1,7 +1,6 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   
   def github
-    # You need to implement the method below in your model
     @user = User.find_for_github_oauth(request.env["omniauth.auth"], current_user)
 
     if @user.persisted?
@@ -14,7 +13,6 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   end
   
   def developer
-    # You need to implement the method below in your model
     @user = User.find_for_github_oauth(request.env["omniauth.auth"], current_user)
 
     if @user.persisted?
